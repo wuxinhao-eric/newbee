@@ -13,18 +13,18 @@ class Quene(object):
         self.queue.append(item)
     def dequene(self):
         #队列中存在数据才能删除
-        if self.queue != []:
+        if self.queue is not []:
             return self.queue.pop()
         else:
             return None
     def head(self):
         #返回队首数据
-        if self.queue != []:
+        if self.queue is not []:
             return self.queue[0]
         else:
             return None
     def tail(self):
-        if self.queue != []:
+        if self.queue is not []:
             return self.queue[-1]
         else:
             return None
