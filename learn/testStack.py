@@ -16,7 +16,7 @@ class Stack:
         self.items.append(item)
     def pop(self):
         #出栈操作，返回列表中制定元素并删除，默认返回列表最后一个元素(栈顶)
-        if self.items != []:
+        if self.items is not []:
             return self.items.pop()
         else:
             return None
